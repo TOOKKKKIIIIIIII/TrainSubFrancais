@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Accuracy/Sub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu latéral -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="#" id="subTab">Sub</a></li>
+            <li><a href="#" id="adverbesTab">Adverbes</a></li>
+            <li><a href="#" id="snTab">Sn</a></li>
+            <li><a href="#" id="minerauxTab">Minéraux</a></li>
+            <li><a href="#" id="motsComposesTab">Mots Composés</a></li>
+            <li><a href="#" id="motsLongsTab">Mots Longs</a></li>
+        </ul>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu -->
+    <button class="open-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Contenu principal du jeu -->
+    <div class="container">
+        <h1>Jeu des Syllabes</h1>
+
+        <!-- Indicateur de catégorie actuelle -->
+        <div id="currentCategory" class="current-category">Sélectionner une catégorie</div>
+
+        <label for="sub">Sélectionner un niveau :</label>
+        <input type="number" id="sub" min="1" max="50" value="1">
+        <button id="start">Commencer</button>
+
+        <p class="syllable">Syllabe :</p>
+        <input type="text" id="wordInput" placeholder="Entrez un mot..." style="display: none;">
+        <button id="skip" style="display: none;">Skip</button>
+        <span class="success-rate">Taux de réussite : 0%</span>
+
+        <p class="answers"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

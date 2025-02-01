@@ -1,0 +1,117 @@
+/* Style du menu latéral */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Masqué au départ */
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Bouton pour ouvrir le menu */
+.open-btn {
+    font-size: 30px;
+    color: white;
+    background-color: #8A2BE2;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Lorsque le menu est ouvert */
+.sidebar.open {
+    left: 0;
+}
+
+/* Style de l'indicateur de catégorie */
+.current-category {
+    font-size: 18px;
+    color: #DDA0DD;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Style général du site */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #DDA0DD; /* Mauve clair */
+}
+
+button {
+    background-color: #8A2BE2; /* Violet */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #6A1EB2;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.syllable, .success-rate {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DDA0DD; /* Mauve clair */
+    margin-top: 10px;
+}
+
+.answers {
+    margin-top: 15px;
+    font-size: 18px;
+}
